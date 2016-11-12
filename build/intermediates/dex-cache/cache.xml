@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_b817cc123a9f25d9588ce51ad991853e2d5e55fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_9a6bef3c1fa97c0e2db5906b354e369bbaeb9832/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.0_cd6f3168b3f146ad09158cc54ba78247395b82ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a30aea7df545072ad3c06f56b2efc13e67222140">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.8.0_7e3cc3327083dea953ff4f688e9e5e88a7e2a2b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.0_2038a830d24a8452de197dd0f11645ed1163a1b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.0_fab8b9f779d7904754da7fe41535ae3a80994855/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e9d9f98241150e47bc41e7e93db63f65b887b861">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_92e4ff8d09e778a4f6cd7994972373cb99c83b3e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_5fc9194722f5203f92cf846d11c574f9f3067e36/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_b0a4bb585c06624a74822ebdda76263230367b80/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.0_19930b01fc74cdfedc0a7255f846fb1d43bd7275/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.0_0c51ce052843f4178cf46e0a79e4e801fb923b5b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.0_72801414e92c8eb085571ef07f9de4bb5580b013/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4f6e7b5c1c36e0a161da7bda66d4a11c111f4ecb">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e8d81766a854b7ac0153a403aba554c0c3d33e7b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_63ad747ad8f9d0344508d9a80a844f8369021829/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.0_036ade7bfbb6e814315b65c07f995fb5b7635e2e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.0_da77398cc7ff9d7750a4e79f3553ca6421117381/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.0_6743cd21d831dab841fa48a2519f8daa4ae41036/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.0_f3e506dee2a559ba7eece680a9a95df31e7b3070/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="12be821dfffa870329874a346c98f7b8e74e5a33">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a5a0dc308f640602c7b9cf6996759435e226660e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.0_13b9da5eecc634c1c04956755bd33e344c95c5ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_30320149b7ae55071480a8c297657b7706449db8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.0_9d5573da77d20e08e17809d94218ce81ccc00fee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e96c2487d5f36e5baff9c016bf5196089100b4a9">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ad98deea517fe703f82e704796a23754a2b5fdc6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a30aea7df545072ad3c06f56b2efc13e67222140">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.8.0_2790f3f5ab888b2c016ea8dc1c7ea6e8b29b5ea2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.0_961d12e448b6226cc4add12899cd7603230c02a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.0_6eddea8b7f7d7299fa2c92a67eda9addf7457c55/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_79173455226bbd1c671e28157c94f2e4fa6e06d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.0_b6c992e9c4e52a0b0a81ca9fc1dc9ff2606049ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.0_c38c9b420e054ed59064f5715fb79cdf2ae260b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_524f7a9b4f0ed0096f46335be25849184797bdcc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.8.0_5af91296088d8c1508fb436c5fb48b0e5624df09/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.0_4839faecae5e623ea4168149092d82b112e661fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_42140d502d511ded7a052719a3d0e9f7c33d3523/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.0_b78287688ed69691dcd75533625bb045217983b7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.0_cf655a5f6731c6034169aef43e349c7cdc33ae2d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_aefcd359c18f3b4da79f28919a165125011760fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_2e7faa2e597f5eb49496b7c7a0e81f28738f2c3c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_0c460fb141107738c3c63cf64ccc853922542d20/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_2c54367d0d668693fc774eb2793d5daa564f6eac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_69247823a70b58b154d24a7301c76d9cc8980d04/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.0_760ba800cb58e59a82eafc5df939c29264db67e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.0_cf3a32082bc9b0d10b0e74206e6b2f6ed751f6c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.0_700e43bda92168d91e5216c5434e4985df8a788e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_985d4d31c2f1c156662ee27dc4cdb4a6ebd01a6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="/home/brendan/AndroidStudioProjects/googly-eyes/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.0_4e003dd83de965c39298b2eb44655efad8c6e313/classes.dex" />
+    </item>
+
+</items>
