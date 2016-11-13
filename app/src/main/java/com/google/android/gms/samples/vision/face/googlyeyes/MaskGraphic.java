@@ -74,7 +74,8 @@ class MaskGraphic extends GraphicOverlay.Graphic {
     @Override
     public void draw(Canvas canvas) {
         PointF detectPosition = mPosition;
-
+        height = canvas.getHeight();
+        width = canvas.getWidth();
 
         if ((detectPosition == null)) {
             timer = 0;
@@ -139,16 +140,32 @@ class MaskGraphic extends GraphicOverlay.Graphic {
         Bitmap bm = BitmapFactory.decodeResource(context.getResources(),R.drawable.mustache2);
         Bitmap bp = BitmapFactory.decodeResource(context.getResources(),R.drawable.glasses);
         Bitmap bl = BitmapFactory.decodeResource(context.getResources(), R.drawable.lock);
+
+        double scaleconst = .66; // need to get working in terms of canvas
+
         Bitmap smallLock = bl.createScaledBitmap(bl,150,150,true);
-        Bitmap newGlasses = bp.createScaledBitmap(bp, (int)(.9*bp.getWidth()), (int) (bp.getHeight()), true);
-        canvas.drawBitmap(bm,310,850,mMaskPaint);
-        canvas.drawBitmap(newGlasses,75,400,mMaskPaint);
+        Bitmap newGlasses = bp.createScaledBitmap(bp, (int)(scaleconst*bp.getWidth()),
+                (int) (scaleconst*bp.getHeight()), true);
+        Bitmap newMustache = bp.createScaledBitmap(bm, (int)(scaleconst*bm.getWidth()),
+                (int) (scaleconst*bm.getHeight()), true);
+
+        int gX = (int) ((width - newGlasses.getWidth())/2);
+        int gY = (int) (3*((height - newGlasses.getHeight())/8));
+        int mxShift = (int) ((newGlasses.getWidth() - newMustache.getWidth())/2);
+        int myShift = (int) (1.1 * newGlasses.getHeight());
+        int mX = gX + mxShift;
+        int mY = gY + myShift;
+
+        canvas.drawBitmap(newMustache,mX,mY,mMaskPaint);
+        canvas.drawBitmap(newGlasses,gX,gY,mMaskPaint);
+
+        double glasstocan = (newGlasses.getHeight()*newGlasses.getWidth())/(height*width);
+//        Log.i("glass to canvas", Double.toString(glasstocan));
 
         double percentage = (face.getWidth()*face.getHeight())/(canvas.getWidth()*canvas.getHeight());
         Log.i("percent", Double.toString(percentage));
-        if(percentage >= 0.033) {
+        if(percentage >= 0.017 &&  percentage <= .039) {
             timer++;
-            Log.i("timer", Integer.toString(timer));
             if(timer >= 8) {
                 unlocked = true;
                 canvas.drawLine(0,0,canvas.getWidth(),0,mStatusPaint);
