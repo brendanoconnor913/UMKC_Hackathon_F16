@@ -15,6 +15,9 @@
  */
 package com.google.android.gms.samples.vision.face.googlyeyes;
 
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.PointF;
 
 import com.google.android.gms.samples.vision.face.googlyeyes.ui.camera.GraphicOverlay;
@@ -38,9 +41,9 @@ import java.util.Map;
  */
 class GooglyFaceTracker extends Tracker<Face> {
     private static final float EYE_CLOSED_THRESHOLD = 0.4f;
-
     private GraphicOverlay mOverlay;
-    private GooglyEyesGraphic mEyesGraphic;
+    private MaskGraphic mMaskGraphic;
+    private Context context;
 
     // Record the previously seen proportions of the landmark locations relative to the bounding box
     // of the face.  These proportions can be used to approximate where the landmarks are within the
@@ -57,8 +60,9 @@ class GooglyFaceTracker extends Tracker<Face> {
     // Methods
     //==============================================================================================
 
-    GooglyFaceTracker(GraphicOverlay overlay) {
+    GooglyFaceTracker(GraphicOverlay overlay, Context c) {
         mOverlay = overlay;
+        context = c;
     }
 
     /**
@@ -66,7 +70,7 @@ class GooglyFaceTracker extends Tracker<Face> {
      */
     @Override
     public void onNewItem(int id, Face face) {
-        mEyesGraphic = new GooglyEyesGraphic(mOverlay);
+        mMaskGraphic = new MaskGraphic(mOverlay, context);
     }
 
     /**
@@ -76,12 +80,11 @@ class GooglyFaceTracker extends Tracker<Face> {
      */
     @Override
     public void onUpdate(FaceDetector.Detections<Face> detectionResults, Face face) {
-        mOverlay.add(mEyesGraphic);
+        mOverlay.add(mMaskGraphic);
 
         updatePreviousProportions(face);
 
-        PointF leftPosition = getLandmarkPosition(face, Landmark.LEFT_EYE);
-        PointF rightPosition = getLandmarkPosition(face, Landmark.RIGHT_EYE);
+        PointF position = getLandmarkPosition(face, Landmark.LEFT_EYE);
 
         float leftOpenScore = face.getIsLeftEyeOpenProbability();
         boolean isLeftOpen;
@@ -101,7 +104,7 @@ class GooglyFaceTracker extends Tracker<Face> {
             mPreviousIsRightOpen = isRightOpen;
         }
 
-        mEyesGraphic.updateEyes(leftPosition, isLeftOpen, rightPosition, isRightOpen);
+        mMaskGraphic.updateMask(position, face);
     }
 
     /**
@@ -111,7 +114,7 @@ class GooglyFaceTracker extends Tracker<Face> {
      */
     @Override
     public void onMissing(FaceDetector.Detections<Face> detectionResults) {
-        mOverlay.remove(mEyesGraphic);
+        mOverlay.remove(mMaskGraphic);
     }
 
     /**
@@ -120,7 +123,7 @@ class GooglyFaceTracker extends Tracker<Face> {
      */
     @Override
     public void onDone() {
-        mOverlay.remove(mEyesGraphic);
+        mOverlay.remove(mMaskGraphic);
     }
 
     //==============================================================================================

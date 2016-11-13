@@ -15,6 +15,7 @@
  */
 package com.google.android.gms.samples.vision.face.googlyeyes;
 
+import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -48,7 +49,7 @@ class GooglyEyesGraphic extends GraphicOverlay.Graphic {
     // Methods
     //==============================================================================================
 
-    GooglyEyesGraphic(GraphicOverlay overlay) {
+    GooglyEyesGraphic(GraphicOverlay overlay, int test) {
         super(overlay);
 
         mEyeWhitesPaint = new Paint();

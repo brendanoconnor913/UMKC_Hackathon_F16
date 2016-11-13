@@ -93,6 +93,7 @@ public final class GooglyEyesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        Context context = getApplicationContext();
         mPreview = (CameraSourcePreview) findViewById(R.id.preview);
         mGraphicOverlay = (GraphicOverlay) findViewById(R.id.faceOverlay);
 
@@ -298,7 +299,7 @@ public final class GooglyEyesActivity extends AppCompatActivity {
             // speed up detection, in that it can quit after finding a single face and can assume
             // that the nextIrisPosition face position is usually relatively close to the last seen
             // face position.
-            Tracker<Face> tracker = new GooglyFaceTracker(mGraphicOverlay);
+            Tracker<Face> tracker = new GooglyFaceTracker(mGraphicOverlay, context);
             processor = new LargestFaceFocusingProcessor.Builder(detector, tracker).build();
         } else {
             // For rear facing mode, a factory is used to create per-face tracker instances.  A
@@ -312,10 +313,11 @@ public final class GooglyEyesActivity extends AppCompatActivity {
             // between these cases is the choice of Processor: one that is specialized for tracking
             // a single face or one that can handle multiple faces.  Here, we use MultiProcessor,
             // which is a standard component of the mobile vision API for managing multiple items.
+            final Context con = context;
             MultiProcessor.Factory<Face> factory = new MultiProcessor.Factory<Face>() {
                 @Override
                 public Tracker<Face> create(Face face) {
-                    return new GooglyFaceTracker(mGraphicOverlay);
+                    return new GooglyFaceTracker(mGraphicOverlay, con);
                 }
             };
             processor = new MultiProcessor.Builder<>(factory).build();
