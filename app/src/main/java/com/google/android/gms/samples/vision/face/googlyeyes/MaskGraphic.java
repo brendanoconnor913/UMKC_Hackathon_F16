@@ -25,6 +25,7 @@ import static java.lang.Math.abs;
 
 class MaskGraphic extends GraphicOverlay.Graphic {
     private Paint mMaskPaint;
+    private Paint mStatusPaint;
     private Context context;
     private volatile PointF mPosition;
     private float width;
@@ -33,6 +34,7 @@ class MaskGraphic extends GraphicOverlay.Graphic {
     private static final float ID_Y_OFFSET = 0.0f;
     private static final float ID_X_OFFSET = 0.0f;
     private int timer = 0;
+    boolean unlocked = false;
 
 
     //==============================================================================================
@@ -48,6 +50,10 @@ class MaskGraphic extends GraphicOverlay.Graphic {
         mMaskPaint.setColor(Color.BLACK);
         mMaskPaint.setStyle(Paint.Style.STROKE);
         mMaskPaint.setStrokeWidth(15);
+        mStatusPaint = new Paint();
+        mStatusPaint.setColor(Color.GRAY);
+        mStatusPaint.setStyle(Paint.Style.STROKE);
+        mStatusPaint.setStrokeWidth(30);
     }
 
     /**
@@ -132,21 +138,31 @@ class MaskGraphic extends GraphicOverlay.Graphic {
 
         Bitmap bm = BitmapFactory.decodeResource(context.getResources(),R.drawable.mustache2);
         Bitmap bp = BitmapFactory.decodeResource(context.getResources(),R.drawable.glasses);
+        Bitmap bl = BitmapFactory.decodeResource(context.getResources(), R.drawable.lock);
+        Bitmap smallLock = bl.createScaledBitmap(bl,150,150,true);
         Bitmap newGlasses = bp.createScaledBitmap(bp, (int)(.9*bp.getWidth()), (int) (bp.getHeight()), true);
-
-        canvas.drawBitmap(bm,300,850,mMaskPaint);
+        canvas.drawBitmap(bm,310,850,mMaskPaint);
         canvas.drawBitmap(newGlasses,75,400,mMaskPaint);
+
         double percentage = (face.getWidth()*face.getHeight())/(canvas.getWidth()*canvas.getHeight());
         Log.i("percent", Double.toString(percentage));
         if(percentage >= 0.033) {
             timer++;
             Log.i("timer", Integer.toString(timer));
-            if(timer > 25) {
-                Log.i("success", "UNLOCK");
+            if(timer >= 8) {
+                unlocked = true;
+                canvas.drawLine(0,0,canvas.getWidth(),0,mStatusPaint);
+            }
+            else {
+                canvas.drawLine(0,0,(float)((canvas.getWidth()/8)*timer),0,mStatusPaint);
             }
         }
         else {
+            canvas.drawLine(0,0,(float)(canvas.getWidth()/8),0,mStatusPaint);
             timer = 0;
+        }
+        if(unlocked) {
+            canvas.drawBitmap(smallLock, 1100, 50, mMaskPaint);
         }
 //        reMask(canvas, face, bm);
     }
