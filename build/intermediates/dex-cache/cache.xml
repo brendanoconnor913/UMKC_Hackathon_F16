@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="ac8c5b07ec14920424c20bdd41180a48a2fc7c14">
+        sha1="a39fe90599ae0b309fba4dd1ce57c1c981d166ca">
         <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_92e4ff8d09e778a4f6cd7994972373cb99c83b3e/classes.dex" />
     </item>
     <item
@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="f179af3305f5ea5f93b7081f47ed12e631d26ab4">
+        sha1="58bb6b95d8295597b1722f1ee8a80ecd6fe5a874">
         <dex dex="/home/brendan/AndroidStudioProjects/UMKC_Hackathon_F16/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e8d81766a854b7ac0153a403aba554c0c3d33e7b/classes.dex" />
     </item>
     <item

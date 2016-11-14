@@ -56,7 +56,6 @@ class MaskGraphic extends GraphicOverlay.Graphic {
         mStatusPaint = new Paint();
         mStatusPaint.setColor(Color.GRAY);
         mStatusPaint.setStyle(Paint.Style.STROKE);
-        mStatusPaint.setStrokeWidth(30);
         mTargetPaint = new Paint();
         mTargetPaint.setARGB(255, 102,205,170);
         mTargetPaint.setStyle(Paint.Style.STROKE);
@@ -87,6 +86,8 @@ class MaskGraphic extends GraphicOverlay.Graphic {
         PointF detectPosition = mPosition;
         height = canvas.getHeight();
         width = canvas.getWidth();
+        mStatusPaint.setStrokeWidth((float) (height*.1));
+
 
         if ((detectPosition == null)) {
             timer = 0;
@@ -177,7 +178,7 @@ class MaskGraphic extends GraphicOverlay.Graphic {
 
         double percentage = (face.getWidth()*face.getHeight())/(canvas.getWidth()*canvas.getHeight());
 //        Log.i("percent", Double.toString(percentage));
-        if(percentage >= 0.017 &&  percentage <= .039) {
+        if(drawBounds(canvas,face)) {
             timer++;
             if(timer >= 8) {
                 unlocked = true;
@@ -194,11 +195,10 @@ class MaskGraphic extends GraphicOverlay.Graphic {
         if(unlocked) {
             canvas.drawBitmap(smallLock, 1100, 50, mMaskPaint);
         }
-        drawBounds(canvas,face);
     }
 
 
-    private void drawBounds(Canvas canvas, Face face){
+    private boolean drawBounds(Canvas canvas, Face face){
         //EulerConstraint
         if(face.getEulerY() < 10 && face.getEulerY() >-10 &&
                 face.getEulerZ() <10 && face.getEulerZ()>-10){
@@ -292,7 +292,7 @@ class MaskGraphic extends GraphicOverlay.Graphic {
                 float mX = (lmX + rmX)/2;
 
                 gX = (int) (xMargin + Math.abs((faceXEnd-lmX)/(faceXEnd - faceX))*newWidth);
-                gY = (int) ((yMargin + Math.abs((noseY-faceY)/(faceYEnd-faceY))*newHeight)+.15*newHeight);
+                gY = (int) ((yMargin + Math.abs((noseY-faceY)/(faceYEnd-faceY))*newHeight)+.125*newHeight);
 
             }
 
@@ -310,9 +310,9 @@ class MaskGraphic extends GraphicOverlay.Graphic {
             }
 
             // Draws Threshold Boxes
-            drawRect(xMargin, yMargin, (float) newWidth, (float) newHeight, mTargetPaint, canvas);
-            drawRect(xMarginH, yMarginH, (float) threshHihW, (float) threshHihH, mDeviationPaint, canvas);
-            drawRect(xMarginL, yMarginL, (float) threshLowW, (float) threshLowH, mDeviationPaint, canvas);
+//            drawRect(xMargin, yMargin, (float) newWidth, (float) newHeight, mTargetPaint, canvas);
+//            drawRect(xMarginH, yMarginH, (float) threshHihW, (float) threshHihH, mDeviationPaint, canvas);
+//            drawRect(xMarginL, yMarginL, (float) threshLowW, (float) threshLowH, mDeviationPaint, canvas);
 
 
 
@@ -327,9 +327,44 @@ class MaskGraphic extends GraphicOverlay.Graphic {
             float top = y - yOffset;
             float right = fx + xOffset;
             float bottom = y + yOffset;
-            canvas.drawRect(left, top, right, bottom, mMaskPaint);
+//            canvas.drawRect(left, top, right, bottom, mMaskPaint);
 
+            double x1 = xMarginL;
+            double y1 = yMarginL + threshLowH;
+            double x2 = xMarginH;
+            double y2 = yMarginH + threshHihH;
+
+            double xTL = x - xOffset;
+            double yTL = y+ yOffset;
+
+            boolean leftBound = false;
+
+            if(xTL >= x2 && xTL <=x1 && yTL >=y1 && yTL <=y2){
+                leftBound = true;
+            }
+
+            double x3 = xMarginL + threshLowW;
+            double y3 = yMarginL + threshLowH;
+            double x4 = xMarginH + threshHihW;
+            double y4 = yMarginH + threshHihH;
+
+            double xTR = x + xOffset;
+            double yTR = y+ yOffset;
+
+            boolean rightBound = false;
+
+            if(xTR <= x4 && xTR >=x3 && yTL <=y4 && yTL >= y3){
+                rightBound = true;
+            }
+
+            if(rightBound && leftBound){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
+        return false;
     }
 
     private void drawRect(float mX, float mY, float w, float h, Paint p, Canvas c ){
