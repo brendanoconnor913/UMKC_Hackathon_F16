@@ -8,46 +8,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/theirBack"
-    tools:context="com.example.brendan.MainActivity">
+    tools:context="com.example.brendan.googly_eyes.MainActivity">
 
-    <Button
-        android:text="Options"
-        android:textColor="@color/white"
-        android:background="@color/button"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/optionButton"
-        android:layout_below="@+id/tutorialButton"
-        android:layout_alignStart="@+id/tutorialButton"
-        android:layout_marginTop="52dp" />
-
-    <Button
-        android:text="Let's Start!"
-        android:background="@color/button"
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/beginButton"
-        android:layout_marginBottom="63dp"
-        android:layout_above="@+id/tutorialButton"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="Tutorial"
-        android:textColor="@color/white"
-        android:background="@color/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tutorialButton"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/beginButton" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp" />
+        android:text="Hello World!" />
 </RelativeLayout>

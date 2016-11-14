@@ -34,11 +34,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.brendan.MainActivity" />
-        <activity android:name="com.example.brendan.OptionMenu" />
-        <activity
-            android:name="com.example.brendan.TutorialMenu"
-            android:label="@string/title_activity_tutorial_menu"></activity>
     </application>
 
 </manifest>

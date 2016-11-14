@@ -3,7 +3,4 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="white">#FFFFFF</color>
-    <color name="theirBack">#66CDAA</color>
-    <color name="button">#3A3A3C</color>
 </resources>

@@ -36,8 +36,8 @@ class GooglyEyesGraphic extends GraphicOverlay.Graphic {
     private Paint mEyeLidPaint;
 
     // Keep independent physics state for each eye.
-    private EyePhysics mLeftPhysics = new EyePhysics();
-    private EyePhysics mRightPhysics = new EyePhysics();
+//    private EyePhysics mLeftPhysics = new EyePhysics();
+//    private EyePhysics mRightPhysics = new EyePhysics();
 
     private volatile PointF mLeftPosition;
     private volatile boolean mLeftOpen;
@@ -110,15 +110,15 @@ class GooglyEyesGraphic extends GraphicOverlay.Graphic {
         float eyeRadius = EYE_RADIUS_PROPORTION * distance;
         float irisRadius = IRIS_RADIUS_PROPORTION * distance;
 
-        // Advance the current left iris position, and draw left eye.
-        PointF leftIrisPosition =
-                mLeftPhysics.nextIrisPosition(leftPosition, eyeRadius, irisRadius);
-        drawEye(canvas, leftPosition, eyeRadius, leftIrisPosition, irisRadius, mLeftOpen);
-
-        // Advance the current right iris position, and draw right eye.
-        PointF rightIrisPosition =
-                mRightPhysics.nextIrisPosition(rightPosition, eyeRadius, irisRadius);
-        drawEye(canvas, rightPosition, eyeRadius, rightIrisPosition, irisRadius, mRightOpen);
+//        // Advance the current left iris position, and draw left eye.
+//        PointF leftIrisPosition =
+//                mLeftPhysics.nextIrisPosition(leftPosition, eyeRadius, irisRadius);
+//        drawEye(canvas, leftPosition, eyeRadius, leftIrisPosition, irisRadius, mLeftOpen);
+//
+//        // Advance the current right iris position, and draw right eye.
+//        PointF rightIrisPosition =
+//                mRightPhysics.nextIrisPosition(rightPosition, eyeRadius, irisRadius);
+//        drawEye(canvas, rightPosition, eyeRadius, rightIrisPosition, irisRadius, mRightOpen);
     }
 
     /**
