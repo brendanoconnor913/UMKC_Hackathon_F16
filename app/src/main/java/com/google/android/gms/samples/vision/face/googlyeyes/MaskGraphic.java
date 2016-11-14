@@ -294,6 +294,11 @@ class MaskGraphic extends GraphicOverlay.Graphic {
                 gX = (int) (xMargin + Math.abs((faceXEnd-lmX)/(faceXEnd - faceX))*newWidth);
                 gY = (int) ((yMargin + Math.abs((noseY-faceY)/(faceYEnd-faceY))*newHeight)+.125*newHeight);
 
+                canvas.drawLine(faceX, translateY(face.getPosition().y), faceXEnd, translateY(face.getPosition().y), mTargetPaint);
+                canvas.drawLine(faceXEnd, translateY(face.getPosition().y)-2, lmX, translateY(face.getPosition().y)-2, mMaskPaint);
+
+                canvas.drawLine(faceX, faceY, faceX, faceYEnd, mTargetPaint);
+                canvas.drawLine(faceX-2, faceY, faceX-2, noseY, mMaskPaint);
             }
 
             Bitmap newGlasses = bp.createScaledBitmap(bp, (int)(.6*newWidth),
